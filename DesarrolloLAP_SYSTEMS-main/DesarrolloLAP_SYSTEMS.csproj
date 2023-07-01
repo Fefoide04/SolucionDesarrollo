@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\..\SolucionVersion22-6\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\..\SolucionVersion22-6\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C83E34A5-426B-4854-A8E9-C9546261608E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DesarrolloLAP_SYSTEMS</RootNamespace>
+    <AssemblyName>DesarrolloLAP_SYSTEMS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\SolucionVersion22-6\packages\EntityFramework.6.4.4\lib\net40\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\SolucionVersion22-6\packages\EntityFramework.6.4.4\lib\net40\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.118.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\..\SolucionVersion22-6\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.118.0\lib\net40\System.Data.SQLite.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6, Version=1.0.118.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\..\SolucionVersion22-6\packages\System.Data.SQLite.EF6.1.0.118.0\lib\net40\System.Data.SQLite.EF6.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=1.0.118.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\..\SolucionVersion22-6\packages\System.Data.SQLite.Linq.1.0.118.0\lib\net40\System.Data.SQLite.Linq.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="comandosBD.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="frm_modUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_modUsuarios.Designer.cs">
+      <DependentUpon>frm_modUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="metodos.cs" />
+    <Compile Include="frm_admUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_admUsuarios.Designer.cs">
+      <DependentUpon>frm_admUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_altaUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_altaUsuarios.Designer.cs">
+      <DependentUpon>frm_altaUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_bajaUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_bajaUsuarios.Designer.cs">
+      <DependentUpon>frm_bajaUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_perfilesDeUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_perfilesDeUsuarios.Designer.cs">
+      <DependentUpon>frm_perfilesDeUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_principal.Designer.cs">
+      <DependentUpon>frm_principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="variablesGlobales.cs" />
+    <EmbeddedResource Include="frm_admUsuarios.resx">
+      <DependentUpon>frm_admUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_altaUsuarios.resx">
+      <DependentUpon>frm_altaUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_bajaUsuarios.resx">
+      <DependentUpon>frm_bajaUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_modUsuarios.resx">
+      <DependentUpon>frm_modUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_perfilesDeUsuarios.resx">
+      <DependentUpon>frm_perfilesDeUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_principal.resx">
+      <DependentUpon>frm_principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Modulo 1\Logo LAP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Modulo 1\Iconos\minimizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Modulo 1\Iconos\ventana.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Modulo 1\Iconos\cerrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Modulo 1\Iconos\maximizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Modulo 1\Iconos\busqueda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Modulo 1\Flecha izquierda.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\SolucionVersion22-6\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\SolucionVersion22-6\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\..\SolucionVersion22-6\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\SolucionVersion22-6\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+    <Error Condition="!Exists('..\..\SolucionVersion22-6\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.118.0\build\net40\Stub.System.Data.SQLite.Core.NetFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\SolucionVersion22-6\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.118.0\build\net40\Stub.System.Data.SQLite.Core.NetFramework.targets'))" />
+  </Target>
+  <Import Project="..\..\SolucionVersion22-6\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\..\SolucionVersion22-6\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+  <Import Project="..\..\SolucionVersion22-6\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.118.0\build\net40\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('..\..\SolucionVersion22-6\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.118.0\build\net40\Stub.System.Data.SQLite.Core.NetFramework.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
